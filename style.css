@@ -14,7 +14,7 @@
     --bck: #74f2f4;
     --ero: #c1121fff;
     --red: #780000ff;
-    --rd: 30px;
+    --rd: 20px;
 }
 /*header*/
 .navbar {
@@ -114,3 +114,40 @@ footer .copyright {
     text-align: center;
 }
 /*end footer*/
+/*register*/
+#brad {
+    width: fit-content;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: var(--rd);
+    border: var(--black) 3px solid;
+}
+.apt{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#rtn {
+    background-color: var(--bck);
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: var(--rd);
+    box-sizing: border-box;
+    margin: 10px;
+}
+#brad input{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: var(--rd);
+    padding: 0 10px;
+}
+#riri {
+    height: 90vh;
+    width: 100%;
+}
+/*end register*/

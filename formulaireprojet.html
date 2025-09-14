@@ -5,36 +5,35 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
     <link rel="website icon" type="png" href="icon.png" >
-    <title>log in</title>
+    <title>Register</title>
 </head>
 <body id="riri">
-   
-    <a href="index.htm"><button>retour</button></a>
 
+    <a href="index personnel.htm"><button id="rtn">retour</button></a>
+<div class="apt">
     <div id="brad">
-   <form action="traitment" method="post">
-    <div>
-        <label for="nom"> nom: </label>
-        <input type="text" id="nom" name="nom"><br>
-    </div>
-    <div>
-        <label for="prenom"> prenom: </label>
-        <input type="text" id="prenom" name="prenom"><br>
-    </div>
-    <div>
-        <label for="compte"> compte: </label>
-        <input type="text" id="compte" name="compte"><br>
-    </div>
-    <div>
-        <label for="date"> date de naissance </label>
-        <input type="date" id="date" ><br>
-    </div>
-    <div>
-        <label for="prez">commentaire: </label>
-        <textarea name="commentaire" id="prez"></textarea><br>
-    </div>
-        <input type="submit" value="envoyer">
-   </form> 
+        <form action="traitment" method="post">
+            <h4> welcome</h4>
+                <div id="input">
+                    <input type="text" id="nom" placeholder="name"  required>
+                </div>
+                <div id="input">
+                    <input type="text" id="prenom" placeholder="surname"  required>
+                </div>
+                <div id="input">
+                    <input type="text" id="compte" placeholder="account"  required>
+                </div>
+                    <div>
+                        <label for="date"> date de naissance </label>
+                        <input type="date" id="date"  required>
+                    </div>
+                    <div>
+                        <label for="prez">commentaire: </label>
+                        <textarea name="commentaire" id="prez"></textarea>
+                    </div>
+                    <input type="submit" value="envoyer">
+        </form> 
    </div>
+</div>
 </body>
 </html>
