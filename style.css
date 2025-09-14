@@ -9,21 +9,23 @@
 
 :root {
     --black: #212529ff;
+    --lblack: #7c7c7d;
     --lit: #fefae0ff;
     --bck: #74f2f4;
     --ero: #c1121fff;
     --red: #780000ff;
+    --rd: 30px;
 }
-
+/*header*/
 .navbar {
     width: 100%;
     height: 5em;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 0 3%;
     box-shadow: 0 5px 10px #00000079;
-    background: var(--black);
+    background: var(--bck);
     z-index: 999;
     position: relative;
     position: sticky;
@@ -31,18 +33,35 @@
     left: 0;
     
 }  
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
+.navbar img {
+    width: 50px;
 }
-footer .col {
+.navbar #hi {
+    width: 550px;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+.navbar #hi div {
+    padding: 15px;
+    background-color: var(--lit);
+    border-radius: var(--rd);
+}
+.navbar #dr {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 20px;
+    align-items: flex-end;
 }
+.navbar #dr a{
+    text-decoration: none;
+    color: var(--black);
+
+}
+.navbar #dr a :hover{
+    color: var(--lblack);
+}
+/*end of header*/
+
 
 /*footer*/
 footer{
@@ -53,6 +72,27 @@ footer{
     align-items: center;
     justify-content: space-between;
     background-color: var(--bck);
+    border-top-left-radius: var(--rd);
+    border-top-right-radius: var(--rd);
+}
+footer .log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+footer img{
+    width: 40px;
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
 }
 footer h4 {
     font-size: 20px;
