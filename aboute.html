@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    #container{
+     display: flex;
+     flex-wrap: 10px;
+     
+}
+ .country{
+    border: groove;
+    border-radius: 10px;
+    background-color: rgb(220, 165, 63);
+
+
+ }
+ .p{
+    border: groove;
+    border-radius: 10px;
+    background-color: url('c:/Users/HP PRO/Pictures/industrie/image.jpg');;
+ }
+ 
+ #info{
+            background-color: rgb(240, 236, 236);
+            border: groove;
+            border-radius: 10px;
+            margin: 15px;
+            padding: 5px;
+            text-align: center;
+        }
+        
+        .p2{
+            color: rgb(0, 0, 0);
+            line-height: 1.6;
+            text-align: center;
+        }
+        #info2{
+ 
+            background-color: rgb(240, 236, 236);
+            border: groove;
+            border-radius: 10px;
+            margin: 15px;
+            padding: 5px;
+            text-align: center;
+        }
+        #image2{
+            border: hidden;
+            text-align: center;
+            margin:15px;
+            padding:5px;
+            border-radius: 10px;
+          }
+        #num{
+          color: orange;
+        }
+
+        #num2{
+          color: orange;
+        }
+        #position{
+            text-align: center;
+        }
+        
+        #position2{
+            text-align: center;
+        }
+        .span{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">A propos</h1>
+    
+    <a href="#">Services</a>
+    <a href="#">home</a>
+    <a href="#">parametre</a>
+    <div id="container">
+        <button class="Country">cameroun</button>
+        <button class="Country">congo</button>
+        <div><!--image1--> </div>
+        
+        <div class="p">
+              <p class="p">ISIC a vu le  jour en 2017 au cameroun il a ete fonde par NTCHATCHOUA ELVIS 
+               et avec le temps elle a pris de l'empleure et aujourd'hui, elle a pris de l'empleure et on retrouve notre entreprise 
+               dans d'autres pays tel
+               au congo brazaville ; il est specialiser dans la vente du materiels electrique ;notre proffessionalisme et qualiter nous a value  des partenariats avec de grand nom telsque: <span class="span">Eneo cameroun</span class="span">
+                <span class="span">alucam</span class="span"> , <span class="span">cimencam</span class="span">,<span class="span">primo cameroun </span class="span">
+                -<span class="span">la coraf</span class="span"> ...
+                notre materiel est importer de dubai , de chine , et d'ailleurs .Notre but premier est la prestation de service a haute echelle ;pour l'entreprise nous aspirons a fabriquer notre propre materiel </p>
+                <div id="info">
+                <Address >positionement: Akwa equipement, Douala</Address>
+                <p id="position">date de creation: 2017</p>
+                <p>secteur d'activite: vente de materiels electriques</p>
+                <p>heure d'ouverture: 8h-20h</p>
+                <p>contacte cameroun:  <span id="num2">677495150</span></p>
+                <p>patron: NTCHATCHOUA ELVIS</p>
+                <p>directrice:MmeNtchatchoua</p>
+                <p > <a href="mailto:isic@gmail.com">adresse e-mail clique ici</a></p>
+                
+           <div class="p">
+              <p id="p2">ISIC a vu le  jours en 2014 au congo il a ete fonde par NTCHATCHOUA ELVIS
+               et avec le temps elle a pris de l'empleure et aujourd'hui
+               au se retrouve dens d'autres pays comme le cameroun; nous  sommes specialiser dans la vente du materiels electrique ;notre proffessionalisme et qualiter nous a value  des partenariats avec de grand nom telsque: <span class="span">Eneo cameroun</span class="span">
+                <span class="span">dangote</span class="span"> , <span class="span">cimentcam</span class="span">,<span class="span">la coraf</span class="span"> ...
+                notre materiel est importer de dubai , de chine , et d'ailleurs .Notre but premier est la prestation de service a haute echelle ;pour l'entreprise nous aspirons a fabriquer notre propre materiel </p>
+              <div id="info2">
+                <Address>positionement: congo brazaville, pointe noir</Address>
+                <p>date de creation: 2014</p>
+                <p>secteur d'activite: vente de materiels electriques</p>
+                <p>heure d'ouverture: 8h-20h</p>
+                <p>contacte cameroun:  <span id="num">677495150</span></p>
+                <p>patron: NTCHATCHOUA ELVIS</p>
+                <p></p>directeur:jepsy</p>
+                <p > <a href="mailto:isic@gmail.com">adresse e-mail clique ici</a></p>
+              </div>
+            </div>
+                 </div>
+                <div class="article">
+                    <div class="image1">  
+                         <img src="" alt="">
+                        </div> 
+                        <div class="information"><p><!--texte--></p></div>
+                   </div>
+                   
+                <div class="article">
+                    <div class="image1">  
+                         <img src="" alt="">
+                    </div> 
+                        <div class="information"><p><!--texte--></p></div>
+                    
+                   </div>
+                            <div  class="image1">
+                             <img src="" alt="">
+                             <div class="information"> <p><!--texte--></p></div> 
+                        </div> 
+                            <div>
+                                 <div  class="image1"></div>
+                                    <img src="" alt=""> 
+                                        <div class="information"> <p><!--texte--></p></div> 
+                            </div>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+
+    $('#p2, #info').hide();
+    $('#cameroun').click(function(){
+        $('#p ,#info').show();
+        $('#p2, #info2').hide();
+    $('#congo').click(function(){
+        $('#p2 ,#info2').show();
+        $('#p, #info').hide();
+    });
+    });
+
+})
+</script>
+
+</html>
+</html>
