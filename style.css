@@ -9,12 +9,19 @@
 
 :root {
     --black: #212529ff;
+    --link: #240476;
     --lblack: #7c7c7d;
     --lit: #fefae0ff;
-    --bck: #74f2f4;
+    --lite: #fbe4c5;
+    --bck:#eab05cff;
+    --bckb:#bc8d4c ;
+    --bckl: #f4c583;
     --ero: #c1121fff;
     --red: #780000ff;
     --rd: 20px;
+}
+body {
+    background-color: var(--lite);
 }
 /*header*/
 .navbar {
@@ -35,6 +42,7 @@
 }  
 .navbar img {
     width: 50px;
+    margin-right: 5px;
 }
 .navbar #hi {
     width: 550px;
@@ -60,9 +68,18 @@
 .navbar #dr a :hover{
     color: var(--lblack);
 }
+.navbar #dr #pa {
+    margin-bottom: 5px;
+}
 /*end of header*/
+/* hero*/
 
+#hero {
+    height: 100vh;
+    padding-left: 20%;
+}
 
+/*hero*/
 /*footer*/
 footer{
     width: 100%;
@@ -115,14 +132,45 @@ footer .copyright {
 }
 /*end footer*/
 /*register*/
-#brad {
+.content{
     width: fit-content;
     height: fit-content;
-    box-sizing: border-box;
     padding: 10px;
-    border-radius: var(--rd);
-    border: var(--black) 3px solid;
 }
+
+#brad {
+    height: fit-content;
+    width: 70vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    border-radius: var(--rd);
+    background-color: var(--bck);
+    overflow: hidden;
+    position: relative;
+}
+#brad span{
+    width: fit-content;
+    display: flex;
+    padding-top: 11%;
+    padding-left: 20px;
+    flex-direction: column;
+
+}
+span img{
+    width: 6%;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+form {
+    width: 40%;
+    height: fit-content;
+    box-sizing: border-box;
+    background-color: var(--bck);
+    padding: 30px;
+}
+
 .apt{
     width: 100%;
     height: 100%;
@@ -135,9 +183,12 @@ footer .copyright {
     width: fit-content;
     height: fit-content;
     padding: 10px;
+    color: var(--lit);
     border-radius: var(--rd);
     box-sizing: border-box;
     margin: 10px;
+    border: var(--lite) solid 3px;
+    color: var(--lit);
 }
 #brad input{
     width: 100%;
@@ -145,9 +196,35 @@ footer .copyright {
     margin-bottom: 10px;
     border-radius: var(--rd);
     padding: 0 10px;
+    border: var(--bckl) solid 3px;
+    outline: none;
+}
+#brad #send{
+    background: var(--lite);
+    border: var(--bck) solid 3px;
+    color: var(--bckb);
+    font-weight: 600;
+    margin-top: 5px;
+}
+form a {
+    color: var(--link);
+    margin-bottom: 5px;
+}
+#loc{
+    margin-top: 20px;
+    padding-left: 10px;
+    width: fit-content;
+    height: 30px;
+    background: var(--lite);
+    border: var(--bck) solid 3px;
+    color: var(--bckb);
+    border-radius: var(--rd);
+    outline: var(--lite) solid 2px;
+    user-select: var(--bckb);
 }
 #riri {
-    height: 90vh;
+    height: 80vh;
     width: 100%;
+    background-color: var(--bckl);
 }
 /*end register*/
