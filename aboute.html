@@ -3,87 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aboute.css">
+    <script src="https://kit.fontawesome.com/4ffc1145c8.js" crossorigin="anonymous"></script>
     <title>Document</title>
-    <style>
 
-#container{
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     
-}
- .country{
-    border: groove;
+</head>
+<style>
+    body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+   .header{
+   background-color:#eab05cff;
+    background-color:#bc8d4c ;
     border-radius: 10px;
-    background-color: rgb(220, 165, 63);
+    }
+    .title{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+    .container{
+    border:groove 10px;
+   border-radius: 10px;
+   border-color: #bc8d4c;
+    background-color:aliceblue;
+    text-transform: lowercase;
+
+}
+ .Congo{
+    border-radius: 5px;
+    background-color: rgb(221, 162, 53);
+    margin: 10px;
+ }
+ .cameroun{
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgb(221, 162,53);
  }
  .p{
+    padding: 10px;
+ }
+ .information-personnelles{
+      display: flex;
+    color: black;
+     justify-content:space-around;
+ }
+ .Brad{
     border: groove;
     border-radius: 10px;
-    background: url('c:/Users/HP PRO/Pictures/industrie/image.jpg');
+    width: 400px;
+    background-color:#bc8d4c ;;
+ }
+ .elsy{
+    border: groove;
+    border-radius: 10px;
+     background-color:#bc8d4c ;
+     text-align: justify;
+ }
+ .button{
+    border-radius: 5px;
+    background-color: rgb(221, 162, 53);
+    margin: 10px;
+ }
+ .name{
+    text-align: center;
+    text-decoration: underline;
+ 
+ }
+ #info{
+    border: double;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
  }
  
- #info{
-            background-color: rgb(240, 236, 236);
-            border: groove;
-            border-radius: 10px;
-            margin: 15px;
-            padding: 5px;
-            text-align: center;
-        }
-        
-        .p2{
-            color: rgb(0, 0, 0);
-            line-height: 1.6;
-            text-align: center;
-        }
-        #info2{
- 
-            background-color: rgb(240, 236, 236);
-            border: groove;
-            border-radius: 10px;
-            margin: 15px;
-            padding: 5px;
-            text-align: center;
-        }
-        #image2{
-            border: hidden;
-            text-align: center;
-            margin:15px;
-            padding:5px;
-            border-radius: 10px;
-          }
-        #num{
-          color: orange;
-        }
+ #info2{
+    text-align: center;
+    border: double;
+    border-radius: 10px;
+    padding: 10px;
+ }
+ .link{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+ justify-content: space-between;
+ }
+ .footer{
+    padding: 20px;
+    margin: 20px;
+   background-color:#eab05cff;
+    background-color:#bc8d4c ;
+    border-radius: 10px;
+    display: flex;
 
-        #num2{
-          color: orange;
-        }
-        #position{
-            text-align: center;
-        }
-        
-        #position2{
-            text-align: center;
-        }
-        .span{
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-    </style>
-</head>
-<body>
-    <h1 id="title">A propos</h1>
-    
-    <a href="#">Services</a>
-    <a href="#">home</a>
-    <a href="#">parametre</a>
-    <div id="container">
-        <button class="Country">cameroun</button>
-        <button class="Country">congo</button>
+
+ }
+ .elements-footer{
+   text-align: center;
+   text-transform: lowercase;
+   text-decoration: underline;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+ }
+</style>
+<body> 
+    <header class="header">
+            <h1 class="title">A propos</h1>
+            <div class="link">
+                    <a href="#">services<i class="fa-solid fa-bars"></i></a>
+                    <a href="rohaneaxel/projet-isic/index.htm">home<i class="fa-solid fa-house fa-lg"></i></a>
+                    <a href="#">parametre<i class="fa-solid fa-gear fa-lg"></i></a>
+            </div>
+   </header>
+    <div class="container">
+
+        <button class="cameroun">cameroun</button>
+        <button class="Congo">congo</button>
         <div><!--image1--> </div>
         
-        <div class="p">
+        <div class="paragraphe1">
               <p class="p">ISIC a vu le  jour en 2017 au cameroun il a ete fonde par NTCHATCHOUA ELVIS 
                et avec le temps elle a pris de l'empleure et aujourd'hui, elle a pris de l'empleure et on retrouve notre entreprise 
                dans d'autres pays tel
@@ -92,75 +131,85 @@
                 -<span class="span">la coraf</span class="span"> ...
                 notre materiel est importer de dubai , de chine , et d'ailleurs .Notre but premier est la prestation de service a haute echelle ;pour l'entreprise nous aspirons a fabriquer notre propre materiel </p>
                 <div id="info">
-                <Address >positionement: Akwa equipement, Douala</Address>
-                <p id="position">date de creation: 2017</p>
-                <p>secteur d'activite: vente de materiels electriques</p>
-                <p>heure d'ouverture: 8h-20h</p>
-                <p>contacte cameroun:  <span id="num2">677495150</span></p>
-                <p>patron: NTCHATCHOUA ELVIS</p>
-                <p>directrice:MmeNtchatchoua</p>
-                <p > <a href="mailto:isic@gmail.com">adresse e-mail clique ici</a></p>
-                
-           <div class="p">
-              <p id="p2">ISIC a vu le  jours en 2014 au congo il a ete fonde par NTCHATCHOUA ELVIS
-               et avec le temps elle a pris de l'empleure et aujourd'hui
-               au se retrouve dens d'autres pays comme le cameroun; nous  sommes specialiser dans la vente du materiels electrique ;notre proffessionalisme et qualiter nous a value  des partenariats avec de grand nom telsque: <span class="span">Eneo cameroun</span class="span">
-                <span class="span">dangote</span class="span"> , <span class="span">cimentcam</span class="span">,<span class="span">la coraf</span class="span"> ...
-                notre materiel est importer de dubai , de chine , et d'ailleurs .Notre but premier est la prestation de service a haute echelle ;pour l'entreprise nous aspirons a fabriquer notre propre materiel </p>
-              <div id="info2">
-                <Address>positionement: congo brazaville, pointe noir</Address>
-                <p>date de creation: 2014</p>
-                <p>secteur d'activite: vente de materiels electriques</p>
-                <p>heure d'ouverture: 8h-20h</p>
-                <p>contacte cameroun:  <span id="num">677495150</span></p>
-                <p>patron: NTCHATCHOUA ELVIS</p>
-                <p></p>directeur:jepsy</p>
-                <p > <a href="mailto:isic@gmail.com">adresse e-mail clique ici</a></p>
-              </div>
-            </div>
+                        <Address >positionement: Akwa equipement, Douala</Address>
+                        <p id="position">date de creation: 2017</p>
+                        <p>secteur d'activite: vente de materiels electriques</p>
+                        <p>heure d'ouverture: 8h-20h</p>
+                        <p>contacte cameroun:  <span id="num2">677495150</span></p>
+                        <p>patron: NTCHATCHOUA ELVIS</p>
+                        <p>directrice:MmeNtchatchoua</p>
+                        <p > <a href="mailto:isic@gmail.com">adresse e-mail clique ici</a></p> 
+               </div>
+         </div>
+                <div class="paragraphe2">
+                     <p class="p2">ISIC a vu le  jours en 2014 au congo il a ete fonde par NTCHATCHOUA ELVIS
+                        et avec le temps elle a pris de l'empleure et aujourd'hui
+                        au se retrouve dens d'autres pays comme le cameroun; nous  sommes specialiser dans la vente du materiels electrique ;notre proffessionalisme et qualiter nous a value  des partenariats avec de grand nom telsque: <span class="span">Eneo cameroun</span class="span">
+                        <span class="span">dangote</span class="span"> , <span class="span">cimentcam</span class="span">,<span class="span">la coraf</span class="span"> ...
+                        notre materiel est importer de dubai , de chine , et d'ailleurs .Notre but premier est la prestation de service a haute echelle ;pour l'entreprise nous aspirons a fabriquer notre propre materiel </p>
+                     <div id="info2">
+                        <Address>positionement: congo brazaville, pointe noir</Address>
+                        <p>date de creation: 2014</p>
+                        <p>secteur d'activite: vente de materiels electriques</p>
+                        <p>heure d'ouverture: 8h-20h</p>
+                        <p>contacte cameroun:  <span id="num">677495150</span></p>
+                        <p>patron: NTCHATCHOUA ELVIS</p>
+                        <p></p>directeur:jepsy</p>
+                        <p > <a href="mailto:isic@gmail.com">adresse e-mail clique ici</a></p>
+                     </div>
+                </div>
+           <button class="button"> les developpeurs </button>
+    <div  class="information-personnelles ">    
+        
+        <div class="elsy">
+            <h2 class="name">elsy</h2>
+            <p>je suis un eleve au college laval a douala au cameroun , eleve dot les embissions depassent
+            ce site est mon tous premier et il est pour quelq'un de speciale pour moi.
+            j'espere de tous coeur que vous l'aimerez.</p>
         </div>
-                <div class="article">
-                    <div class="image1">  
-                         <img src="" alt="">
-                        </div> 
-                        <div class="information"><p><!--texte--></p></div>
-                   </div>
-                   
-                <div class="article">
-                    <div class="image1">  
-                         <img src="" alt="">
-                    </div> 
-                        <div class="information"><p><!--texte--></p></div>
-                    
-                   </div>
-                            <div  class="image1">
-                             <img src="" alt="">
-                             <div class="information"> <p><!--texte--></p></div> 
-                        </div> 
-                            <div>
-                                 <div  class="image1"></div>
-                                    <img src="" alt=""> 
-                                        <div class="information"> <p><!--texte--></p></div> 
-                            </div>
+        <div class="Brad">
+            <h2 class="name">Brad <!-- si tu veux tu peux mettre ton pseudo de developpeur--></h2>
+            <!--remplie tes informations ici-->
+        </div>
     </div>
-</body>
-
+    <footer class="footer">
+      <h3 class="elements-footer">nos liens de contactes</h3>
+            <a class="social-item" href="http://LinkedIn.com" target="_blank">LinkedIn</a><i class="fa-brands fa-linkedin"></i>
+            <a class="social-item" href="http://github.com" target="_blank">Github</a><i class="fa-brands fa-github"></i>
+            <a class="social-item" href="http://Twitter.com" target="_blank">Twitter</a><i class="fa-brands fa-twitter"></i>
+            <a class="social-item" href="http://facebook.com" target="_blank">Facebook</a><i class="fa-brands fa-facebook"></i>
+            <a class="social-item" href="http://instagram" target="_blank">Instagram</a><i class="fa-brands fa-instagram"></i>
+            <a class="social-item" href="http://tiktok.com" target="_blank">TikTok</a><i class="fa-brands fa-tiktok"></i>
+         <h3 class="elements-footer">quelques partenaires importants</h3>
+         <ol>
+      <li><a href="https://www.cimencam.com ">cimencam</a></li>
+      <li><a href="https://www.coraf.cg">coraf</a></li>
+       <li><a href="https://eneocameroon.cm">eneocameroon</a></li>
+       </ol>
+    </footer>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-$(document).ready(function(){
+   <script>
 
-    $('#p2, #info').hide();
-    $('#cameroun').click(function(){
-        $('#p ,#info').show();
-        $('#p2, #info2').hide();
-    $('#congo').click(function(){
-        $('#p2 ,#info2').show();
-        $('#p, #info').hide();
-    });
-    });
+    $(document).ready(function(){
 
-})
+        $('.paragraphe2').hide();
+
+             $('.Congo').click(function(){
+
+                $('.paragraphe2').show();
+
+                    $('.paragraphe1').hide();
+    });
+         $('.cameroun').click(function(){
+
+                       $('.paragraphe2').hide();
+
+                $('.paragraphe1').show();
+     
+    });
+       });
+
 </script>
 
-</html>
+</body>
 </html>
