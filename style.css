@@ -6,23 +6,24 @@
     box-sizing: border-box;
     font-family: 'Spartan', sans-serif;
 }
-
-:root {
-    --black: #212529ff;
-    --link: #240476;
-    --lblack: #7c7c7d;
-    --lit: #fefae0ff;
-    --lite: #fbe4c5;
-    --bck:#eab05cff;
-    --bckb:#bc8d4c ;
-    --bckl: #ebd0ad;
-    --ero: #c1121fff;
-    --red: #780000ff;
-    --rd: 20px;
+.section-p1{
+    padding: 20px 20px;
 }
-body {
-    background-color: var(--bckl);
-    background-image: ur;
+:root {
+    --rd: 20px;
+    --bg-light: hsl(0, 0%, 100%);
+    --bg: hsl(31, 74%, 85%);
+    --bg-dark: hsl(31, 74%, 80%);
+    --txtl: hsl(31, 74%, 25%);
+    --txt: #0d0d0d;
+    --txtlink: #000000;
+    --bckb: hsl(31, 74%, 10%);
+    --bck:  hsl(31, 74%, 60%);
+    --bckl: hsl(31, 74%, 70%);
+}
+.body {
+    background-image: url(bg.jpg);
+    background-size: cover;
 }
 /*animations*/
 @keyframes fade-down {
@@ -58,6 +59,27 @@ body {
         transform: translateX(0px) scale(1);
     }
 }
+@keyframes fade-right{
+    0%{
+        opacity: 0;
+        transform: translateX(50px) scale(0.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
+@keyframes apart{
+    0%{
+        display: none;
+        transform: translateX(-5px) scale(0.9);
+    }
+
+    100%{
+        transform: translateX(0px) scale(1);
+    }
+}
 /*header*/
 .navbar {
     width: 100%;
@@ -73,11 +95,10 @@ body {
     position: sticky;
     top: 0;
     left: 0;
-    animation: fade-down 0.4s;
 }  
 .navbar img {
     width: 50px;
-    margin-right: 5px;
+    margin-right: 2px;
 }
 .navbar #hi {
     width: 550px;
@@ -87,33 +108,43 @@ body {
 }
 .navbar #hi div {
     padding: 15px;
-    background-color: var(--lit);
-    border-radius: var(--rd);
 }
 .navbar #dr {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
+
 .navbar #dr a{
     text-decoration: none;
-    color: var(--black);
-
+    color: var(--txt);
 }
 .navbar #dr a :hover{
-    color: var(--lblack);
+    color: var(--txtl);
+    
 }
+.icon{
+    margin-right: 2px;
+    display: flex;
+}
+.icon span {
+    margin: 0 5px;
+
+}
+
 .navbar #dr #pa {
     margin-bottom: 5px;
+    display: flex;
 }
 /*end of header*/
 /* hero*/
 
 #hero {
-    height: 100vh;
+    height: 88.5vh;
     box-sizing: border-box;
     padding: 12% 9%;
     overflow: hidden;
+    background: radial-gradient(farthest-corner at 20% 0, var(--bckl) 50%, transparent) ;
 }
 #hero h1 {
     font-size: 3em;
@@ -122,7 +153,7 @@ body {
 }
 #hero hr {
     width: 30%;
-    background-color: var(--bckb);
+    background-color: var(--bck);
     height: 4px;
     border: none;
     animation: fade-left 0.6s;
@@ -130,6 +161,24 @@ body {
 #hero p {
     margin-top: 10px;
     animation: fade-left 0.7s;
+}
+#hero button{
+    height: fit-content;
+    width: fit-content;
+    padding: 8px;
+    background: var(--bckb);
+    font-size: 1em;
+    color: var(--bck);
+    border-radius: var(--rd);
+    border: none;
+    margin-top: 10px;
+    transition: 0.4s ease;
+    animation: fade-left 0.8s;
+}
+#hero button:hover{
+    background: var(--bck);
+    color: var(--txt);
+    cursor: pointer;
 }
 
 /*hero*/
@@ -145,8 +194,6 @@ footer{
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: var(--bck);
-    border-top-left-radius: var(--rd);
-    border-top-right-radius: var(--rd);
 }
 
 footer img{
@@ -164,12 +211,12 @@ footer img:nth-child(2){
 
 footer h4 {
     font-size: 20px;
-    color: var(--black);
+    color: var(--txt);
     padding-bottom: 10px;
 }
 footer a{
     text-decoration: none;
-    color: var(--black);
+    color: var(--txt);
     margin-bottom: 5px;
 }
 .quick{
@@ -189,6 +236,24 @@ footer .copyright {
     padding: 10px;
     animation: fade-up 0.5s;
 }
+#prez{
+    height: 60px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#prez a {
+    color: var(--bckb);
+}
+#prez a:hover{
+    color: var(--bckl);
+}
+#prez a:active{
+    color: var(--bg-light);
+}
 
 #brad {
     height: fit-content;
@@ -197,7 +262,7 @@ footer .copyright {
     display: flex;
     justify-content: space-between;
     border-radius: var(--rd);
-    background-color: var(--bck);
+    background-color: var(--bg);
     overflow: hidden;
     position: relative;
 }
@@ -219,7 +284,7 @@ form {
     width: 40%;
     height: fit-content;
     box-sizing: border-box;
-    background-color: var(--bck);
+    background-color: var(--bg);
     padding: 30px;
 }
 
@@ -231,17 +296,16 @@ form {
     justify-content: center;
 }
 #rtn {
-    background-color: var(--bck);
+    background-color: var(--bg-dark);
     width: fit-content;
     height: fit-content;
     padding: 10px;
-    color: var(--lit);
+    color: var(--txt);
     border-radius: var(--rd);
     box-sizing: border-box;
-    margin: 10px;
-    border: var(--lite) solid 3px;
-    color: var(--lit);
+    border: none;
     animation: fade-left 0.4s;
+    cursor: pointer;
 }
 #brad input{
     width: 100%;
@@ -249,36 +313,205 @@ form {
     margin-bottom: 10px;
     border-radius: var(--rd);
     padding: 0 10px;
-    border: var(--bckl) solid 3px;
+    border: var(--bck) solid 3px;
     outline: none;
 }
 #brad #send{
-    background: var(--lite);
-    border: var(--bck) solid 3px;
-    color: var(--bckb);
+    background: var(--bg);
+    color: var(--bck);
     font-weight: 600;
     margin-top: 5px;
+    cursor: pointer;
+}
+#brad #send:hover{
+    background: var(--bg-dark);
 }
 form a {
-    color: var(--link);
+    color: var(--txtlink);
     margin-bottom: 5px;
 }
+
  
 #loc{
     margin-top: 20px;
     padding-left: 10px;
     width: fit-content;
     height: 30px;
-    background: var(--lite);
+    background: var(--bg-dark);
     border: var(--bck) solid 3px;
-    color: var(--bckb);
+    color: var(--bck);
     border-radius: var(--rd);
-    outline: var(--lite) solid 2px;
-    user-select: var(--bckb);
+    user-select: var(--bck);
+    cursor: pointer;
 }
 #riri {
     height: 80vh;
     width: 100%;
-    background-color: var(--bckl);
+    background-color: var(--bg-light);
 }
 /*end register*/
+/*home*/
+#presentation{
+    overflow: hidden;
+}
+#her{
+    height: 30vh;
+    box-sizing: border-box;
+    padding: 12% 9%;
+    overflow: hidden;
+    background: var(--bg-dark);
+}
+
+#topic{
+    display: flex;
+    justify-content: space-between;
+}
+
+#topic span {
+    position: relative;
+    text-align: left;
+    width: 45%;
+    height: fit-content;
+    animation: fade-left 0.6s;
+}
+#topic span:nth-child(2n){
+    text-align: right;
+    animation: fade-right 0.5s;
+}
+#topic span div{
+    font-size: 2em;
+    font-weight: 600;
+}
+#topic span div:nth-child(2n){
+    left: 10px;
+    position: absolute;
+    width:fit-content;
+    animation: fade-right 0.6s;
+}
+
+.slider {
+    display: flex;
+    position: relative;
+    background: var(--bg);
+    height: fit-content;
+    
+}
+.slider .slide{
+    width: 100%;
+    display: flex;
+    height: 365px;
+    padding-left: 15px;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    flex: none;
+    overflow-x: scroll;
+}
+.slider .cat{
+    position: absolute;
+    top: -30px;
+    right: 20px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.25em;
+    font-weight: 600;
+    padding: 10px;
+    background-color: var(--bg-dark);
+    color: var(--txt);
+    border-radius: var(--rd);
+}
+.slider .slide::-webkit-scrollbar {
+    height: 0;
+}
+#box {
+    background-color: var(--bg-dark);
+    border-radius: var(--rd);
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    height: 354px;
+    width: 354px;
+    color: var(--txt);
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+#box:hover {
+    scale: 1.025;
+    #show{
+        filter: brightness(60%) grayscale(100%);
+        top: -110px;
+    }
+}
+#show{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: 0.4s ease-out;
+    border-radius: var(--rd);
+}
+.slider div #box .text{
+    display: block;
+    padding: 10px 0 10px 10px;
+}
+.slider div #box div{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+.slider div a {
+    text-decoration: none;
+}
+
+#backBtn{
+    height: 100%;
+    width: 40px;
+    background: linear-gradient(to right, var(--bg-dark) 50%, transparent) ;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    padding: 10px;
+    z-index: 100;
+    color: var(--txt);
+    align-items: center;
+
+}
+#nextBtn{
+    height: 100%;
+    width: 40px;
+    background: linear-gradient(to left, var(--bg-dark) 50%, transparent) ;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    color: var(--txt);
+    padding: 10px;
+    align-items: center;
+}
+.slider .more{
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.slider .more i{
+    font-size: 49px;
+    transform: translate(-10px,0.5px);
+    color: var(--bckb);
+}
+.slider .more hr {
+    width: 80%;
+    height: 6px;
+    z-index: 102;
+    background-color: var(--bckb);
+    border: none;
+}
+.slider .more a{
+    font-size: 1.25em;
+    font-weight: 700;
+}
+/*end home*/
