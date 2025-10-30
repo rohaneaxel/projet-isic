@@ -63,7 +63,9 @@
 </section>
 
 <section id="her" class="section-p1">
-
+   <?php
+    echo ="salut".$nom; 
+    ?>
 </section>
 
 <section id="presentation" class="section-p1">
