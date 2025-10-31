@@ -1,48 +1,242 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PROJET-ISIC</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="website icon" type="png" href="icon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+        <title>ISIC</title>
+</head>
+<body>
+<section class="navbar">
+            <div class="logo" id="hi">
+                <img src="logo.png" alt="logo">
+                <div>
+                    <h4>ISIC</h4>
+                    <P>Ingénierie Système des Industriels du Cameroun </P>
+                </div>
+            </div>
+            <div id="dr">
+                <div id="pa"> 
+                    </a>
+                    <a href="aboute.html">
+                        <div class="icon"><i class="fa-solid fa-circle-info"></i>
+                            <span>
+                                About
+                            </span>
+                        </div>
+                        
+                    </a>
+                    <a href="#">
+                        <div class="icon"><i class="fa-solid fa-bell-concierge"></i>
+                            <span>
+                                services
+                            </span>
+                        </div>
+                        
+                    </a>
+                    <a href="#">
+                        <div class="icon"><i class="fa-solid fa-phone"></i>
+                            <span>
+                                contact
+                            </span>
+                        </div>
+                        
+                    </a>
+                </div>
+                <div id="co">
+                    <a href="login.htm">
+                        <span>
+                            log in
+                        </span>
+                    </a>
+                    /
+                    <a href="register.html">
+                        <span>
+                            Register
+                        </span>
+                    </a>
+                </div>
+            </div>
+</section>
 
-$password="";
-$error="";
+<section id="her" class="section-p1">
+    <?php
+    echo ="salut".$nom; 
+    ?>
+</section>
+
+<section id="presentation" class="section-p1">
+    <section id="topic">
+        <img src="" alt="">
+        <span>
+            <div>Titre</div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed aliquam nulla.
+                Etiam ac dolor vel eratpulvinar elementum quis vitae orci. Aliquam erat volutpat.
+                Aenean semper commodo est, non vestibulum mi eleifend vel. Mauris ac semper mi.
+                Donec vulputate scelerisque ipsum, ut ultrices odio varius eget.
+                Integer interdum vehicula neque neccursus. Fusce id hendrerit risus. 
+                Nunc rhoncus eros lacus, at feugiat erat auctor id. Sed tortor orci, dictum eget nullanec, porta tristique mauris. 
+                Aenean enim est, gravida quis eleifend sit amet, feugiat ut est. 
+                Aenean felis ex, commodo sedsapien vitae, interdum tristique massa.
+            </p>
+        </span>
+    </section>
+    <section id="topic">
+        <span>
+            <div>Titre</div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed aliquam nulla.
+                Etiam ac dolor vel eratpulvinar elementum quis vitae orci. Aliquam erat volutpat.
+                Aenean semper commodo est, non vestibulum mi eleifend vel. Mauris ac semper mi.
+                Donec vulputate scelerisque ipsum, ut ultrices odio varius eget.
+                Integer interdum vehicula neque neccursus. Fusce id hendrerit risus. 
+                Nunc rhoncus eros lacus, at feugiat erat auctor id. Sed tortor orci, dictum eget nullanec, porta tristique mauris. 
+                Aenean enim est, gravida quis eleifend sit amet, feugiat ut est. 
+                Aenean felis ex, commodo sedsapien vitae, interdum tristique massa.
+            </p>
+        </span>
+        <img src="" alt="">
+    </section>
+    
+    
+</section>
+
+<section class="slider section-p1">
+    <div class="cat">Catalogue</div>
+        <span id="backBtn"><i class="fa-solid fa-chevron-left fa-2xl"></i></span>
+            <div class="slide">
+                <a href="">
+                <div id="box">
+                    <img id="show" src="disjonc.jpg" alt="">
+                    <div>
+                        <span class="text">
+                            <h2>Produit</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed aliquam nulla.</p>
+                        </span>
+                        <i class="fa-solid fa-chevron-right fa-2xl"></i>
+                    </div>
+                </div>
+                </a>
+                <a href="">
+                <div id="box">
+                    <img id="show" src="disjonc2.jpg" alt="">
+                    <div>
+                        <span class="text">
+                            <h2>Produit</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed aliquam nulla.</p>
+                        </span>
+                        <i class="fa-solid fa-chevron-right fa-2xl"></i>
+                    </div>
+                </div>
+                </a>
+                <a href="">
+                <div id="box">
+                    <img id="show" src="fusib.jpg" alt="">
+                    <div>
+                        <span class="text">
+                            <h2>Produit</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed aliquam nulla.</p>
+                        </span>
+                        <i class="fa-solid fa-chevron-right fa-2xl"></i>
+                    </div>
+                </div>
+                </a>
+                <a href="">
+                <div id="box">
+                    <img id="show" src="disjonc2.jpg" alt="">
+                    <div>
+                        <span class="text">
+                            <h2>Produit</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed aliquam nulla.</p>
+                        </span>
+                        <i class="fa-solid fa-chevron-right fa-2xl"></i>
+                    </div>
+                </div>
+                </a>
+                <a href="">
+                <div id="box">
+                    <img id="show" src="disjonc.jpg" alt="">
+                    <div>
+                        <span class="text">
+                            <h2>Produit</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed aliquam nulla.</p>
+                        </span>
+                        <i class="fa-solid fa-chevron-right fa-2xl"></i>
+                    </div>
+                </div>
+                </a>
+                <a href="">
+                <div id="box">
+                    <img id="show" src="disjonc.jpg" alt="">
+                    <div>
+                        <span class="text">
+                            <h2>Produit</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed aliquam nulla.</p>
+                        </span>
+                        <i class="fa-solid fa-chevron-right fa-2xl"></i>
+                    </div>
+                </div>
+                </a>
+                <a href="">
+                <div id="box">
+                    <img id="show" src="fusib.jpg" alt="">
+                    <div>
+                        <span class="text">
+                            <h2>Produit</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed aliquam nulla.</p>
+                        </span>
+                        <i class="fa-solid fa-chevron-right fa-2xl"></i>
+                    </div>
+                </div>
+                </a>
+            </div>
+        <span id="nextBtn"><i class="fa-solid fa-chevron-right fa-2xl"></i></span>
+        <span class="more"><hr><i class="fa-solid fa-arrow-right fa-2xl"></i> <a href="">Voir plus...</a></span>
+        
+        
+</section>
+
+<section class="news section-p1">
+
+</section>
 
 
-$name=$_POST["nom"];
-$prenom=$_POST["prenom"];
-$date=$_POST["date"];
 
- if($server["REQUEST_METHOD"]==='POST'){
+<footer>
+    <div class="contactus">
+        <div>
+            <img id="logo" src="logo.png" alt="logo">
+            <img id="logo" src="logo.png" alt="logo">
+        </div>
+        
+        <h4>Contact us</h4>
+        <p><b>Email:</b> Info@example.com </p>      
+        <p><b>Phone:</b> +01 2222 365 / (+91) 01 2345 6789 </p>
+        <p><b>Address:</b> 1234 - Example, Country </p>
+        <h5><u>lien de certains de nos partenaires</u></h5>
+            <ul>
+                <li><a href="htp://Eneocameroun.com">Eneocameroun</a></li>
+                <li><a href="htp://primocameroun.com"> primocameroun</a></li>
+                <li><a href="htp://coraf.com"> coraf</a></li>
+            </ul>
+    </div>
 
-  $motsdepass=trim($_POST["motsdepass"]);
-
- function verify($motsdepass) {
-
-$nombredecaractere=strlen($motsdepass)>=12;
-
-$lettremajuscule=preg_match('/[A-Z]/',$motsdepass);
-
-$lettreminuscule=preg_match('/[a-z]/',$motsdepass);
-
-$chiffres=preg_match('/[0-9]/',$motsdepass);
-
-$caracteres=preg_match('/[\w]/',$motsdepass);
-
-if ($nombredecaractere && $lettremajuscule && $lettreminuscule  && $chiffres && $caracteres) {
- 
-  header("Location: homes.php");
-
-  exit();
-
-}  else {
-  $error="ce mots de passe doit etre fort !";
-
-   header("Location:formulaireprojet.php?error=$error");
-}
- verify($motsdepass);
- }
- }
-
-
-
-
-
-
-
-?>
+    <div class="quick">
+        <h4>Quick links</h4>
+        <a href="aboute.html">about</a>
+        <a href="#">Services</a>
+        <a href="login.htm">login</a>
+        <a href="#">contact</a>
+    </div>
+    <div class="copyright">
+        <p>© 2024, ISIC, All rights reserved</p>
+    </div>
+</footer> 
+<script src="script.js">
+</script>
+</body>
+</html>

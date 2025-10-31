@@ -365,28 +365,66 @@ form a {
 #topic{
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-bottom: 30px;
 }
 
 #topic span {
     position: relative;
     text-align: left;
-    width: 45%;
+    width: 55%;
     height: fit-content;
     animation: fade-left 0.6s;
 }
 #topic span:nth-child(2n){
     text-align: right;
+    
     animation: fade-right 0.5s;
+    
 }
 #topic span div{
     font-size: 2em;
     font-weight: 600;
 }
 #topic span div:nth-child(2n){
-    left: 10px;
+    right: 10px;
     position: absolute;
     width:fit-content;
     animation: fade-right 0.6s;
+}
+#topic .img {
+    width: 40vw;
+    height:110vh ;
+    position: relative;
+    background-color: var(--bck);
+    border-radius: 0% 23% 27% 24% / 0% 23% 33% 35% ;
+}
+#topic .img:nth-child(2n){
+    border-radius: 31% 0% 20% 24% / 24% 0% 22% 37% ;
+}
+#topic .img img {
+    width: 100%;
+}
+#topic p{
+    color: var(--txt);
+    margin: 10px 0 10px 0;
+}
+#topic h2{
+    margin-bottom: 10px;
+    color: var(--txt);
+}
+#topic .title {
+    margin-bottom: 30px;
+    position: relative;
+    color: var(--bg-dark);
+    font-size: 2em;
+}
+#topic .title span{
+    color: var(--bck);
+    bottom: -25px;
+    right: 47px;
+
 }
 
 .slider {
